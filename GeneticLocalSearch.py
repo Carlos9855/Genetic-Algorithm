@@ -23,6 +23,7 @@ class GeneticLocalSearch:
     def graph_parameters_progresion(self, y_min, y_max, y_av):
         x = range(1,self.num_generation)
         
+        plt.grid()
         plt.plot(x,y_min)
         plt.plot(x,y_av)
         plt.plot(x,y_max)
@@ -32,6 +33,8 @@ class GeneticLocalSearch:
         count = 1
         print(f"Goal result in generation {self.num_generation}th")
         for chr in self.current_generation.chromosomes:
-            if chr.ff_value == self.goal_ff: print(f"{count}--{chr.show()}--{chr.ff_value} <- Chromosome with goal value")
-            else: print(f"{count}--{chr.show()}--{chr.ff_value}")
+            if chr.ff_value == self.goal_ff: 
+                print(f"{count}--{chr.show()}--{chr.ff_value} <- Chromosome with goal value")
+            else: 
+                print(f"{count}--{chr.show()}--{chr.ff_value}")
             count += 1

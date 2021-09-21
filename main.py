@@ -8,8 +8,8 @@ import numpy as np
 def main():
     num_genes_per_chr = 20
     num_chr_per_gen = 100
-    crossover_prob = 0.7
-    mutation_prob = 0.001
+    crossover_prob = 0.1
+    mutation_prob = 0.005
     max_num_of_gene = '1'
     settings = Settings(max_num_of_gene, num_genes_per_chr, num_chr_per_gen, crossover_prob, mutation_prob)
     initial_generation = Generation(settings)
