@@ -53,7 +53,7 @@ Pc: 0.7 Pm: 0.001
 
 ## Run the same experiment, but this time without mutation (pc = 0.7, pm = 0).
 
-|Run Number|Strongchromosome generation|
+|Run Number|Strong chromosome generation|
 | :---: | :---: | 
 |1|42|
 |2|30| 
@@ -81,7 +81,7 @@ Pc: 0.7 Pm: 0.001
 
 * pc = 0.9, pm = 0.001
 
-|Run Number|Strongchromosome generation|
+|Run Number|Strong chromosome generation|
 | :---: | :---: | 
 |1|142|
 |2|199| 
@@ -107,7 +107,7 @@ Pc: 0.7 Pm: 0.001
 
 * pc = 0.3, pm = 0.001
 
-|Run Number|Strongchromosome generation|
+|Run Number|Strong chromosome generation|
 | :---: | :---: | 
 |1|1713|
 |2|1007| 
@@ -136,6 +136,307 @@ Pc: 0.7 Pm: 0.001
 
 
 ## Run the algorithm 20 times, for each run it reports in which generation the strongest chromosome was found.strongest chromosome was found. It reports the average of this value. Vary the population size. Test with 50, 100, 500, 1000 chromosomes. Which is the best choice? Why?
+
+|| With 50 chromosomes-cross-0.7-mut-0.001
+||Run Number | Strong chromosome generation
+|:---: | :---: | :---: |
+||1| 1161 |
+||2| 45 |
+||3| 38 |
+||4| 442 |
+||5| 161 |
+||6| 31 |
+||7| 1475 |
+||8| 211 |
+||9| 54 |
+||10| 868 |
+||11| 39 |
+||12| 42 |
+||13| 16 |
+||14| 1262 |
+||15| 56 |
+||16| 221 |
+||17| 36 |
+||18| 2378 |
+||19| 33 |
+||20| 1350 |
+||Average| 495.95 |
+
+
+|| With 50 chromosomes-cross-0.9-mut-0.001
+||Run Number | Strong chromosome generation
+|:---: | :---: | :---: |
+||1| 466 |
+||2| 54 |
+||3| 1388 |
+||4| 1988 |
+||5| 4551 |
+||6| 53 |
+||7| 8867 |
+||8| 45 |
+||9| 37 |
+||10| 6582 |
+||11| 762 |
+||12| 3885 |
+||13| 3500 |
+||14| 34 |
+||15| 47 |
+||16| 2934 |
+||17| 39 |
+||18| 1296 |
+||19| 76 |
+||20| 39 |
+||Average| 1832.15 |
+
+|| With 50 chromosomes-cross-0.3-mut-0.001
+||Run Number | Strong chromosome generation
+|:---: | :---: | :---: |
+||1| 1978 |
+||2| 236 |
+||3| 3554 |
+||4| 2466 |
+||5| 932 |
+||6| 1850 |
+||7| 1584 |
+||8| 704 |
+||9| 732 |
+||10| 771 |
+||11| 4294 |
+||12| 2437 |
+||13| 945 |
+||14| 241 |
+||15| 2262 |
+||16| 634 |
+||17| 3058 |
+||18| 70 |
+||19| 4989 |
+||20| 3047 |
+||Average| 1839.2 |
+
+|| With 100 chromosomes-cross-0.7-mut-0.001
+||Run Number | Strong chromosome generation
+|:---: | :---: | :---: |
+||1| 25 |
+||2| 35 |
+||3| 34 |
+||4| 27 |
+||5| 27 |
+||6| 30 |
+||7| 22 |
+||8| 20 |
+||9| 22 |
+||10| 27 |
+||11| 28 |
+||12| 22 |
+||13| 29 |
+||14| 19 |
+||15| 37 |
+||16| 16 |
+||17| 20 |
+||18| 32 |
+||19| 32 |
+||20| 20 |
+||Average| 26.2 |
+
+|| With 100 chromosomes-cross-0.9-mut-0.001
+||Run Number | Strong chromosome generation
+|:---: | :---: | :---: |
+||1| 25 |
+||2| 38 |
+||3| 54 |
+||4| 44 |
+||5| 26 |
+||6| 33 |
+||7| 33 |
+||8| 45 |
+||9| 35 |
+||10| 26 |
+||11| 30 |
+||12| 9 |
+||13| 40 |
+||14| 36 |
+||15| 22 |
+||16| 30 |
+||17| 51 |
+||18| 34 |
+||19| 62 |
+||20| 29 |
+||Average| 35.1 |
+
+|| With 100 chromosomes-cross-0.3-mut-0.001
+||Run Number | Strong chromosome generation
+|:---: | :---: | :---: |
+||1| 79 |
+||2| 19 |
+||3| 40 |
+||4| 53 |
+||5| 36 |
+||6| 59 |
+||7| 1206 |
+||8| 41 |
+||9| 23 |
+||10| 41 |
+||11| 46 |
+||12| 519 |
+||13| 91 |
+||14| 736 |
+||15| 647 |
+||16| 247 |
+||17| 239 |
+||18| 42 |
+||19| 68 |
+||20| 16 |
+||Average| 212.4 |
+
+|| With 500 chromosomes-cross-0.7-mut-0.001
+||Run Number | Strong chromosome generation
+|:---: | :---: | :---: |
+||1| 23 |
+||2| 19 |
+||3| 14 |
+||4| 18 |
+||5| 15 |
+||6| 20 |
+||7| 15 |
+||8| 16 |
+||9| 18 |
+||10| 21 |
+||11| 14 |
+||12| 12 |
+||13| 24 |
+||14| 22 |
+||15| 19 |
+||16| 14 |
+||17| 12 |
+||18| 17 |
+||19| 17 |
+||20| 24 |
+||Average| 17.7 |
+
+|| With 500 chromosomes-cross-0.9-mut-0.001
+||Run Number | Strong chromosome generation
+|:---: | :---: | :---: |
+||1| 17 |
+||2| 17 |
+||3| 19 |
+||4| 14 |
+||5| 19 |
+||6| 17 |
+||7| 22 |
+||8| 17 |
+||9| 22 |
+||10| 18 |
+||11| 10 |
+||12| 22 |
+||13| 19 |
+||14| 11 |
+||15| 16 |
+||16| 18 |
+||17| 21 |
+||18| 14 |
+||19| 9 |
+||20| 22 |
+||Average| 17.2 |
+
+|| With 500 chromosomes-cross-0.3-mut-0.001
+||Run Number | Strong chromosome generation
+|:---: | :---: | :---: |
+||1| 40 |
+||2| 21 |
+||3| 25 |
+||4| 13 |
+||5| 25 |
+||6| 21 |
+||7| 27 |
+||8| 21 |
+||9| 15 |
+||10| 23 |
+||11| 20 |
+||12| 22 |
+||13| 29 |
+||14| 27 |
+||15| 28 |
+||16| 28 |
+||17| 23 |
+||18| 23 |
+||19| 19 |
+||20| 13 |
+||Average| 23.15 |
+
+|| With 1000 chromosomes-cross-0.7-mut-0.001
+||Run Number | Strong chromosome generation
+|:---: | :---: | :---: |
+||1| 19 |
+||2| 15 |
+||3| 8 |
+||4| 15 |
+||5| 15 |
+||6| 20 |
+||7| 19 |
+||8| 17 |
+||9| 17 |
+||10| 20 |
+||11| 19 |
+||12| 9 |
+||13| 14 |
+||14| 16 |
+||15| 14 |
+||16| 11 |
+||17| 12 |
+||18| 18 |
+||19| 19 |
+||20| 14 |
+||Average| 15.55 |
+
+|| With 1000 chromosomes-cross-0.9-mut-0.001
+||Run Number | Strong chromosome generation
+|:---: | :---: | :---: |
+||1| 18 |
+||2| 18 |
+||3| 16 |
+||4| 14 |
+||5| 16 |
+||6| 18 |
+||7| 16 |
+||8| 12 |
+||9| 18 |
+||10| 14 |
+||11| 19 |
+||12| 17 |
+||13| 21 |
+||14| 19 |
+||15| 16 |
+||16| 21 |
+||17| 22 |
+||18| 24 |
+||19| 16 |
+||20| 15 |
+||Average| 17.5 |
+
+|| With 1000 chromosomes-cross-0.3-mut-0.001
+||Run Number | Strong chromosome generation
+|:---: | :---: | :---: |
+||1| 24 |
+||2| 13 |
+||3| 22 |
+||4| 15 |
+||5| 26 |
+||6| 30 |
+||7| 28 |
+||8| 9 |
+||9| 18 |
+||10| 20 |
+||11| 18 |
+||12| 22 |
+||13| 16 |
+||14| 18 |
+||15| 10 |
+||16| 20 |
+||17| 28 |
+||18| 16 |
+||19| 29 |
+||20| 20 |
+||Average| 20.1 |
 
 ## Run the algorithm for 100 generations and plot the best, worst and average fitness function found in each generation vs. the number of generations. 
 
