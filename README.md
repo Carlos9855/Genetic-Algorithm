@@ -440,6 +440,8 @@ Pc: 0.7 Pm: 0.001
 
 ## Run the algorithm for 100 generations and plot the best, worst and average fitness function found in each generation vs. the number of generations. 
 
+![image](https://user-images.githubusercontent.com/72448046/134285908-c73a486d-c078-45d0-b9b0-ed0009cb8db2.png)
+
 # Conclusions
 
 
