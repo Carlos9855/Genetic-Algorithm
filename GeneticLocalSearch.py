@@ -28,7 +28,7 @@ class GeneticLocalSearch:
         plt.plot(x,y_av)
         plt.plot(x,y_max)
         plt.show()
-
+        
     def show_results(self):
         count = 1
         print(f"Goal result in generation {self.num_generation}th")
