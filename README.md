@@ -137,7 +137,7 @@ The best choise would be pc = 0.7, pm = 0 because the average indicates that wit
 
 ## Run the algorithm 20 times, for each run it reports in which generation the strongest chromosome was found.strongest chromosome was found. It reports the average of this value. Vary the population size. Test with 50, 100, 500, 1000 chromosomes. Which is the best choice? Why?
 
-The best choise is 1000 because...
+The best choise is 1000 because the average indicates that with that number of chromosomes we can find the stronger one in less generations. We deduced that it's because there is more variaty and better probabilities of making crossover between the strongest chromosomes.
 
 || With 50 chromosomes-cross-0.7-mut-0.001
 ||Run Number | Strong chromosome generation
@@ -445,9 +445,11 @@ The best choise is 1000 because...
 ![image](https://user-images.githubusercontent.com/72448046/134285908-c73a486d-c078-45d0-b9b0-ed0009cb8db2.png)
 
 # Conclusions
-
+We conclude that with more number of chromosomes we can find better results. This can be observed on the experiments since we have changed not oly the number of chromosomes but also the probabilities of crossover and mutation and every time we got the better result based on the number of chromosomes. 
+Also another conclussion is that the changes in probabilities not always leads to a completly different result. In certain cases it does, but the number of chromosomes is a more precisely and concrete variable.
 
 # Recommendations
+It is recommended to focus on the generations where the stronger chromosome has been found because we think that it certainly represents which combination of chromosomes and probabilities are the best to solve our problem.
 
 # Porotos
 
