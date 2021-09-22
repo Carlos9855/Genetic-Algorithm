@@ -132,10 +132,12 @@ Pc: 0.7 Pm: 0.001
 |Average | 1458.6|
 
 ## Which is the best choice of parameters according to the results obtained above? Why?
-
+The best choise would be pc = 0.7, pm = 0 because the average indicates that with this parameters the algorithm finds, in less generations the strong chromosome
 
 
 ## Run the algorithm 20 times, for each run it reports in which generation the strongest chromosome was found.strongest chromosome was found. It reports the average of this value. Vary the population size. Test with 50, 100, 500, 1000 chromosomes. Which is the best choice? Why?
+
+The best choise is 1000 because...
 
 || With 50 chromosomes-cross-0.7-mut-0.001
 ||Run Number | Strong chromosome generation
