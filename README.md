@@ -55,6 +55,11 @@ Pc: 0.7 Pm: 0.001
 
 ## Run the same experiment, but this time without crossover (pc = 0, pm = 0.001).
 
+The algorithm was run 20 times, without considering the probability of crossover through a loop and the average number of generation in which the strongest cormosome was found was calculated. The results were as follows:
+
+It was not possible to obtain results, we can argue as follows:
+
+The result is very complicated to obtain because in the absence of crossover the algorithm improves in each generation only by choosing those with a high value of fitness function, and it will reach a point that the chromosome with the highest value in the initial generation has been chosen and re-chosen more than the others and the whole generation is a repetition of this, leaving the algorithm as the only way to improve a generation the appearance of a mutation that is very unlikely (0.001%).
 
 ## Run the same experiment, but this time without mutation (pc = 0.7, pm = 0).
 
