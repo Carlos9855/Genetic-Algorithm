@@ -23,10 +23,12 @@ class GeneticLocalSearch:
     def graph_parameters_progresion(self, y_min, y_max, y_av):
         x = range(1,self.num_generation)
         
-        plt.grid()
-        plt.plot(x,y_min)
-        plt.plot(x,y_av)
-        plt.plot(x,y_max)
+        plt.plot(x,y_min, "-b", label="minimum")
+        plt.plot(x,y_av, "-g", label="average")
+        plt.plot(x,y_max, "-y", label="maximum")
+        plt.legend(loc="upper left")
+        plt.ylabel("Fitness Funtion")
+        plt.xlabel("Generation")
         plt.show()
         
     def show_results(self):
