@@ -505,7 +505,12 @@ Considering that genes take values between 0-9, an initial population of 100 chr
 
 # Garbanzos
 
+Using the genetic algorithm, taking the number of genes as the number of queens, the gene value as the queen position in the rows and the gene position as the position in the columns. In addition to the initial parameters 100 chromosomes, Pc 0.7 AND Pm = 0.01. The number of non-collisions between queens for random positions of the eight queens was found as the fitness function value. When the problem is solved, i.e. there are no collisions, the value of the **fitness function** is equal to 28.
+
+The problem was solved as shown below. 
 ![image](https://user-images.githubusercontent.com/72448046/134451688-a3a6cc3f-1c6e-448c-9446-6a00d2fddd2f.png)
+
+However, there are random starting positions that do not result in a generation with the solution chromosome.
 
 # BIBLIOGRAPHY
 * Class slides
