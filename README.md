@@ -468,7 +468,7 @@ For the resolution of this function it is necessary to take into account:
 
 The value of fitness function for a value that does not contain ones must be very low. For example one can come up with something like this:
 
-Foto: 9_1
+![image](https://user-images.githubusercontent.com/72448046/134451597-c0112194-43fa-43a6-bae9-ea2901efd9c8.png)
 
 However, this type of assessment was not determinant, the generations were considering values closer to 1, but as they were not exactly values of 1 the target chromosome was not found. The process discards chromosomes and interacambia among the selected ones and we need an exact value of 1 to be positioned in the place of each gene in the chromosome and not one close to 1, the process should be getting closer to that value 1 but at some point in a gene position there are no ones in the whole generation for that position, they have been discarded at some point and the algorithm stagnates.
 
@@ -478,7 +478,7 @@ Explanation of the fitness function used
 
 The fitness function used considers another argument, the number of ones in each position of a gene, i.e. it counts how many ones there are in the whole generation in each gene position, that is to say:
 
-foto: 9-2
+![image](https://user-images.githubusercontent.com/72448046/134451624-5b5a9de9-dff6-4cda-9502-65e305cd37cc.png)
 
 Then to determine the fitness function value of a chromosome we count the amount of 1s of this one, besides trying to give a higher value to a gene with value 1 if in that position of the gene there are not many values of 1 in the rest of the generation and if in that position there are several other genes with value 1 in other chromosomes it will have less value. In short we try not to lose the value 1 at a gene position as the generations progress and cause stagnation.
 
@@ -502,6 +502,10 @@ Considering that genes take values between 0-9, an initial population of 100 chr
 ||9| 728 |
 ||10| 3596 |
 ||Average| 2080.7 |
+
+# Garbanzos
+
+![image](https://user-images.githubusercontent.com/72448046/134451688-a3a6cc3f-1c6e-448c-9446-6a00d2fddd2f.png)
 
 # BIBLIOGRAPHY
 * Class slides
