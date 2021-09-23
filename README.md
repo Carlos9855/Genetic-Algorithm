@@ -480,9 +480,7 @@ The fitness function used considers another argument, the number of ones in each
 
 foto: 9-2
 
-Then to determine the fitness function value of a chromosome we count the amount of 1s of this one, besides trying to give a higher value to a gene with value 1 if in that position of the gene there are not many values of 1 in the rest of the generation and if in that position there are several other genes with value 1 in other chromosomes it will have less value. In short we try not to lose the value 1 at a gene position as the generations progress and cause stagnation. The exact process is described in the figure below.
-
-foto: 9-3
+Then to determine the fitness function value of a chromosome we count the amount of 1s of this one, besides trying to give a higher value to a gene with value 1 if in that position of the gene there are not many values of 1 in the rest of the generation and if in that position there are several other genes with value 1 in other chromosomes it will have less value. In short we try not to lose the value 1 at a gene position as the generations progress and cause stagnation.
 
 This results in less stagnation and in fewer generations, which allows a miutation to break the stagnation earlier.
 
@@ -493,16 +491,18 @@ Considering that genes take values between 0-9, an initial population of 100 chr
 || With 1000 chromosomes-cross-0.3-mut-0.001
 ||Run Number | Strong chromosome generation
 |:---: | :---: | :---: |
-||1| 24 |
-||2| 13 |
-||3| 22 |
-||4| 15 |
-||5| 26 |
-||6| 30 |
-||7| 28 |
-||8| 9 |
-||9| 18 |
-||10| 20 |
+||1| 157 |
+||2| 5195 |
+||3| 1284 |
+||4| 1795 |
+||5| 4556 |
+||6| 3389 |
+||7| 58 |
+||8| 49 |
+||9| 728 |
+||10| 3596 |
+||Average| 2080.7 |
 
 # BIBLIOGRAPHY
-* 
+* Class slides
+* https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.monografias.com%2Ftrabajos27%2Falgoritmos-geneticos%2Falgoritmos-geneticos.shtml&psig=AOvVaw0-PLjMpBdxIHtsVnuCSyJy&ust=1632454086387000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCJjmrcKTlPMCFQAAAAAdAAAAABAi
