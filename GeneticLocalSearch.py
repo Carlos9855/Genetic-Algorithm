@@ -12,7 +12,7 @@ class GeneticLocalSearch:
         y_av = []
         y_min = []
         y_max = []
-        while(self.current_generation.max_valued_chr.ff_value < self.goal_ff and self.num_generation<8500):
+        while(self.current_generation.max_valued_chr.ff_value < self.goal_ff and self.num_generation<1000000):
             self.current_generation.new_generation()
             self.num_generation += 1
             y_av.append(sum([chr.ff_value for chr in self.current_generation.chromosomes])/len(self.current_generation.chromosomes))
