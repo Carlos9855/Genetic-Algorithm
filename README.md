@@ -13,7 +13,12 @@ For the solution of this problem were used four classes Chromosome, generation G
 the solve consists in 
 
 # Running the script
+In order to run the program you first have to enter the 
+directory where the ***main.py*** file is located through 
+the ***CMD*** console or the one of your choice.
 
+Then in the console you have to enter the `python3 main.py` or `py main.py`, a message
+ will appear asking you to enter the option of your preference
 
 # EXPERIMENTS
 
