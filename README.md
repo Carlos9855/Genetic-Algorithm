@@ -10,7 +10,7 @@ There are several generations of chromosomes from which the chromosome with the 
 
 # Solution Description
 For the solution of this problem were used four classes Chromosome, generation GeneticLocalSearch, settings that help to find the solution with the different poblations, probabilities of mutation and crossover 
-the solve consists in 
+
 
 # Running the script
 In order to run the program you first have to enter the 
