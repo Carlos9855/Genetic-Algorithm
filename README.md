@@ -462,6 +462,47 @@ Also another conclussion is that the changes in probabilities not always leads t
 It is recommended to focus on the generations where the stronger chromosome has been found because we think that it certainly represents which combination of chromosomes and probabilities are the best to solve our problem.
 
 # Porotos
+Analysis of possible fitness function
+
+For the resolution of this function it is necessary to take into account:
+
+The value of fitness function for a value that does not contain ones must be very low. For example one can come up with something like this:
+
+Foto: 9_1
+
+However, this type of assessment was not determinant, the generations were considering values closer to 1, but as they were not exactly values of 1 the target chromosome was not found. The process discards chromosomes and interacambia among the selected ones and we need an exact value of 1 to be positioned in the place of each gene in the chromosome and not one close to 1, the process should be getting closer to that value 1 but at some point in a gene position there are no ones in the whole generation for that position, they have been discarded at some point and the algorithm stagnates.
+
+We tried to improve this by giving more value to the 1s, up to several times the value of the nearest 1, but it always stagnates. (We left the implementation of this idea commented in the settings class, exactly in the constructor where the fitness function to be used for the case of 0-9 is assigned).
+
+Explanation of the fitness function used
+
+The fitness function used considers another argument, the number of ones in each position of a gene, i.e. it counts how many ones there are in the whole generation in each gene position, that is to say:
+
+foto: 9-2
+
+Then to determine the fitness function value of a chromosome we count the amount of 1s of this one, besides trying to give a higher value to a gene with value 1 if in that position of the gene there are not many values of 1 in the rest of the generation and if in that position there are several other genes with value 1 in other chromosomes it will have less value. In short we try not to lose the value 1 at a gene position as the generations progress and cause stagnation. The exact process is described in the figure below.
+
+foto: 9-3
+
+This results in less stagnation and in fewer generations, which allows a miutation to break the stagnation earlier.
+
+Experimentation
+
+Considering that genes take values between 0-9, an initial population of 100 chromosomes, Pc = 0.7 and Pm = 0.001 we ran the algorithm 10 times and found in each iteration the generation in which the strongest chromosome was found. The results are shown in the following table:
+
+|| With 1000 chromosomes-cross-0.3-mut-0.001
+||Run Number | Strong chromosome generation
+|:---: | :---: | :---: |
+||1| 24 |
+||2| 13 |
+||3| 22 |
+||4| 15 |
+||5| 26 |
+||6| 30 |
+||7| 28 |
+||8| 9 |
+||9| 18 |
+||10| 20 |
 
 # BIBLIOGRAPHY
 * 
